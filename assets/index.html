@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="mobile-web-app-capable" content="yes" />
+    <title>Video Conference</title>
+    <link
+      href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <h1>
+        <span>Video Conference</span>
+      </h1>
+
+      <video id="selfCam" playsinline autoplay muted></video>
+
+      <div class="box">
+        <button id="startButton">Start</button>
+        <button id="callButton">Call</button>
+        <button id="hangupButton">Hang Up</button>
+      </div>
+
+      <div id="hub" class="box"></div>
+    </div>
+
+    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+    <script src="main.js" async></script>
+  </body>
+</html>
